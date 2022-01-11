@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Cajero Automatico</title>
+    <style>
+        body{
+            background-color:rgba(0, 0, 0, 0.226);
+            color:black;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        #btnextraer
+        {
+            background-color: brown;
+            color: white;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            width: 230px;
+            padding: 1px 5px 5px 5px ;
+            border-radius: 5%;
+            font-size: medium;
+        }
+
+        #valordinero
+        {
+            height: 22px;
+        }
+        #imgcajero
+        {
+            border: 2px solid rgb(141, 132, 132);
+            width: 27%;
+        }
+        #cajero
+        {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-top: 5px;
+            text-align: center;
+        }
+        #resultado
+        {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-style: oblique;
+        }
+     
+
+    
+    </style>
+</head>
+<body>
+   
+    <div id="imgcajero" >
+        <img src="cajero.jfif" width="410" height="300" alt="">
+        <p id="cajero">
+        </p>
+    </div>
+    
+    <p>
+        <h3>Ingresa la cantidad que deseas Extraer:</h3>
+        <input type="number" id="valordinero">
+        <input type="button" value="Extraer" id="btnextraer">
+    </p>
+    <p id="resultado"></p>
+
+    <script src="classAtm.js"></script>
+    <script src="atm.js"></script>
+</body>
+</html>
